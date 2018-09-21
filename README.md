@@ -17,10 +17,11 @@ Then, files in "fast-style-transfer" of this repository are moved to above origi
                           Each images resized to fixed size.
 
 ```python:Usage
-    python make_outputImage.py --content $content_image_file_name \
-                               --create $created_image_file_name_by_evaluate.jpg \
-			       --style $style_image_file_name \
-			       --out $output_file_name
+python make_outputImage.py \
+    --content $content_image_file_name \
+    --create $created_image_file_name_by_evaluate.jpg \
+    --style $style_image_file_name \
+    --out $output_file_name
 ```
 
 * make_outputImage2.py ... same as make_outputImage.py
