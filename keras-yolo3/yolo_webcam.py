@@ -218,6 +218,7 @@ def detect_video(yolo, video_path, output_path=""):
 
 
 def detect_img(yolo):
+    cv2.moveWindow("YOLOv2", 100, 100)
     while True:
         ret, image = cap.read()
         if cv2.waitKey(10) == 27:

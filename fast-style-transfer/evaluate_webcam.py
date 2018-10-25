@@ -136,6 +136,7 @@ def ffwd(checkpoint_dir, device_t='/gpu:0', batch_size=1):
         else:
             saver.restore(sess, checkpoint_dir)
 
+        cv2.moveWindow("fast-style-transfer", 100, 100)
 
         while True:
             ret, image = cap.read()
